@@ -273,14 +273,14 @@ The raw data sets come from the following files:
 
 
 Task 1: Merge the training and the test sets to create one data set
-	. Measurement data from the raw data sets, train/X_train.txt and test/X_test.txt, are merged 
-	. Label data from the raw data sets, train/y_train.txt and test/y_test.txt, are merged  
-	. Subject data from the raw data sets, train/subject_train.txt and test/subject_test.txt, are merged 
+	* Measurement data from the raw data sets, train/X_train.txt and test/X_test.txt, are merged 
+	* Label data from the raw data sets, train/y_train.txt and test/y_test.txt, are merged  
+	* Subject data from the raw data sets, train/subject_train.txt and test/subject_test.txt, are merged 
 
 Task 2: Extract only the measurements on the mean and standard deviation for each measurement 
-	. Create a subset of feature list with mean() or std() in their variable names 
-	. Removed "(", ")", and replaced "-" with "_" in mean_sd_features to ensure legitimate feature variable names 
-	. Create a subset of measurements based on mean_sd_features --> mean_sd_data
+	* Create a subset of feature list with mean() or std() in their variable names 
+	* Removed "(", ")", and replaced "-" with "_" in mean_sd_features to ensure legitimate feature variable names 
+	* Create a subset of measurements based on mean_sd_features --> mean_sd_data
 
 Task 3: Join the data from labels with the data from activity so that labels are associated with activity names
 
