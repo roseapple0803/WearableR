@@ -1,5 +1,6 @@
 
-DATA DICTIONARY FOR FINAL TIDY DATA
+**DATA DICTIONARY FOR FINAL TIDY DATA**
+
 
 1                 Subjectid:	an identifier of the subject who carried out the experiment
 								int from 1 to 30
@@ -208,7 +209,7 @@ DATA DICTIONARY FOR FINAL TIDY DATA
 
 
 
-NOTE: 66 feature variables are used for the final data
+**NOTE: 66 feature variables are used for the final data**
 
 Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
@@ -257,7 +258,7 @@ For the purpose of our project, however, we are only interested in the measureme
 
 
 
-Transformations to create a tidy data set 
+**Transformations to create a tidy data set **
 
 The raw data sets come from the following files:
 
@@ -285,7 +286,7 @@ Task 3: Join the data from labels with the data from activity so that labels are
 
 Task 4: create a data set with descriptive variable names by merging all subjects, activity labels, and the measured data 
 
-step 5: create data set with the average of each variable for each activity and each subject, also write the data set to a text file, tidydata.txt
+Task 5: create data set with the average of each variable for each activity and each subject, also write the data set to a text file, tidydata.txt
 
 
 
