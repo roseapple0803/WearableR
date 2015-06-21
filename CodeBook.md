@@ -1,4 +1,4 @@
-DATA DICTIONARY FOR FINAL TIDY DATA
+**DATA DICTIONARY FOR FINAL TIDY DATA**
 
 1 Subjectid: an identifier of the subject who carried out the experiment int from 1 to 30
 
@@ -138,7 +138,7 @@ DATA DICTIONARY FOR FINAL TIDY DATA
 
 
 
-NOTE: 66 feature variables are used for the final dat
+**NOTE: 66 feature variables are used for the final dat**
 
 The study on Human Activity Recognition is based on the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. The original features selected for the study come from the accelerometer, gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ, and other signals. For example,
 
@@ -166,7 +166,7 @@ For the purpose of our project, however, we are only interested in the measureme
 
 
 
-TRANSFORMATIONS TO CREATE A TIDY DATA SET
+**TRANSFORMATIONS TO CREATE A TIDY DATA SET**
 
 The raw data sets come from the following files:
 
@@ -178,18 +178,22 @@ test/X_test.txt: Test set.
 test/y_test.txt: Test labels.
 train/subject_train.txt
 test/subject_test.txt
-Task 1: Merge the training and the test sets to create one data set
+
+
+TASK 1: Merge the training and the test sets to create one data set
 
 Measurement data from the raw data sets, train/X_train.txt and test/X_test.txt, are merged
 Label data from the raw data sets, train/y_train.txt and test/y_test.txt, are merged
 Subject data from the raw data sets, train/subject_train.txt and test/subject_test.txt, are merged
-Task 2: Extract only the measurements on the mean and standard deviation for each measurement
+
+TASK 2: Extract only the measurements on the mean and standard deviation for each measurement
 
 Create a subset of feature list with mean() or std() in their variable names
 Removed "(", ")", and replaced "-" with "_" in mean_sd_features to ensure legitimate feature variable names
 Create a subset of measurements based on mean_sd_features --> mean_sd_data
-Task 3: Join the data from labels with the data from activity so that labels are associated with activity names
 
-Task 4: create a data set with descriptive variable names by merging all subjects, activity labels, and the measured data
+TASK 3: Join the data from labels with the data from activity so that labels are associated with activity names
 
-Task 5: create data set with the average of each variable for each activity and each subject, also write the data set to a text file, tidydata.txt
+TASK 4: create a data set with descriptive variable names by merging all subjects, activity labels, and the measured data
+
+TASK 5: create data set with the average of each variable for each activity and each subject, also write the data set to a text file, tidydata.txt
