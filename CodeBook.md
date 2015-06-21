@@ -258,7 +258,7 @@ For the purpose of our project, however, we are only interested in the measureme
 
 
 
-**Transformations to create a tidy data set **
+**TRANSFORMATIONS TO CREATE A TIDY DATA SET**
 
 The raw data sets come from the following files:
 
