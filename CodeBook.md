@@ -1,124 +1,218 @@
 
-The Dataset includes the following files:
-=========================================
-Source of the data:
+DATA DICTIONARY FOR FINAL TIDY DATA
 
-- features.txt: List of all features.
+1                 Subjectid:	an identifier of the subject who carried out the experiment
+								int from 1 to 30
 
-- activity_labels.txt: Links the class labels with their activity name.
+2   			ActivityType:	type of activity performed by each subject 
+								Factor w/ 6 levels 
+								1 WALKING 2 WALKING_UPSTAIRS 3 WALKING_DOWNSTAIRS 4 SITTING 5 STANDING 6 LAYING
 
-- train/X_train.txt: Training set.
+3			 tBodyAcc_mean_X:	feature variable
+								num within [-1,1]
 
-- train/y_train.txt: Training labels.
+4            tBodyAcc_mean_Y:	feature variable
+								num within [-1,1]
 
-- test/X_test.txt: Test set.
+5            tBodyAcc_mean_Z:	feature variable
+								num within [-1,1]
 
-- test/y_test.txt: Test labels.
+6             tBodyAcc_std_X:	feature variable
+								num within [-1,1]
 
-- train/subject_train.txt
+7             tBodyAcc_std_Y:	feature variable
+								num within [-1,1]
 
--------------------------------------
+8             tBodyAcc_std_Z:	feature variable
+								num within [-1,1]
+
+9         tGravityAcc_mean_X:	feature variable
+								num within [-1,1]
+
+10        tGravityAcc_mean_Y:	feature variable
+								num within [-1,1]
+
+11        tGravityAcc_mean_Z:	feature variable
+								num within [-1,1]
+
+12         tGravityAcc_std_X:	feature variable
+								num within [-1,1]
+
+13         tGravityAcc_std_Y:	feature variable
+								num within [-1,1]
+
+14         tGravityAcc_std_Z:	feature variable
+								num within [-1,1]
+
+15       tBodyAccJerk_mean_X:	feature variable
+								num within [-1,1]
+
+16       tBodyAccJerk_mean_Y:	feature variable
+								num within [-1,1]
+
+17       tBodyAccJerk_mean_Z:	feature variable
+								num within [-1,1]
+
+18        tBodyAccJerk_std_X:	feature variable
+								num within [-1,1]
+
+19        tBodyAccJerk_std_Y:	feature variable
+								num within [-1,1]
+
+20        tBodyAccJerk_std_Z:	feature variable
+								num within [-1,1]
+
+21          tBodyGyro_mean_X:	feature variable
+								num within [-1,1]
+
+22          tBodyGyro_mean_Y:	feature variable
+								num within [-1,1]
+
+23          tBodyGyro_mean_Z:	feature variable
+								num within [-1,1]
+
+24           tBodyGyro_std_X:	feature variable
+								num within [-1,1]
+
+25           tBodyGyro_std_Y:	feature variable
+								num within [-1,1]
+
+26           tBodyGyro_std_Z:	feature variable
+								num within [-1,1]
+
+27      tBodyGyroJerk_mean_X:	feature variable
+								num within [-1,1]
+
+28      tBodyGyroJerk_mean_Y:	feature variable
+								num within [-1,1]
+
+29      tBodyGyroJerk_mean_Z:	feature variable
+								num within [-1,1]
+
+30       tBodyGyroJerk_std_X:	feature variable
+								num within [-1,1]
+
+31       tBodyGyroJerk_std_Y:	feature variable
+								num within [-1,1]
+
+32       tBodyGyroJerk_std_Z:	feature variable
+								num within [-1,1]
+
+33          tBodyAccMag_mean:	feature variable
+								num within [-1,1]
+
+34           tBodyAccMag_std:	feature variable
+								num within [-1,1]
+
+35       tGravityAccMag_mean:	feature variable
+								num within [-1,1]
+
+36        tGravityAccMag_std:	feature variable
+								num within [-1,1]
+
+37      tBodyAccJerkMag_mean:	feature variable
+								num within [-1,1]
+
+38       tBodyAccJerkMag_std:	feature variable
+								num within [-1,1]
+
+39         tBodyGyroMag_mean:	feature variable
+								num within [-1,1]
+
+40          tBodyGyroMag_std:	feature variable
+								num within [-1,1]
+
+41     tBodyGyroJerkMag_mean:	feature variable
+								num within [-1,1]
+
+42      tBodyGyroJerkMag_std:	feature variable
+								num within [-1,1]
+
+43           fBodyAcc_mean_X:	feature variable
+								num within [-1,1]
+
+44           fBodyAcc_mean_Y:	feature variable
+								num within [-1,1]
+
+45           fBodyAcc_mean_Z:	feature variable
+								num within [-1,1]
+
+46            fBodyAcc_std_X:	feature variable
+								num within [-1,1]
+
+47            fBodyAcc_std_Y:	feature variable
+								num within [-1,1]
+
+48            fBodyAcc_std_Z:	feature variable
+								num within [-1,1]
+
+49       fBodyAccJerk_mean_X:	feature variable
+								num within [-1,1]
+
+50       fBodyAccJerk_mean_Y:	feature variable
+								num within [-1,1]
+
+51       fBodyAccJerk_mean_Z:	feature variable
+								num within [-1,1]
+
+52        fBodyAccJerk_std_X:	feature variable
+								num within [-1,1]
+
+53        fBodyAccJerk_std_Y:	feature variable
+								num within [-1,1]
+
+54        fBodyAccJerk_std_Z:	feature variable
+								num within [-1,1]
+
+55          fBodyGyro_mean_X:	feature variable
+								num within [-1,1]
+
+56          fBodyGyro_mean_Y:	feature variable
+								num within [-1,1]
+
+57          fBodyGyro_mean_Z:	feature variable
+								num within [-1,1]
+
+58           fBodyGyro_std_X:	feature variable
+								num within [-1,1]
+
+59           fBodyGyro_std_Y:	feature variable
+								num within [-1,1]
+
+60           fBodyGyro_std_Z:	feature variable
+								num within [-1,1]
+
+61          fBodyAccMag_mean:	feature variable
+								num within [-1,1]
+
+62           fBodyAccMag_std:	feature variable
+								num within [-1,1]
+
+63  fBodyBodyAccJerkMag_mean:	feature variable
+								num within [-1,1]
+
+64   fBodyBodyAccJerkMag_std:	feature variable
+								num within [-1,1]
+
+65     fBodyBodyGyroMag_mean:	feature variable
+								num within [-1,1]
+
+66      fBodyBodyGyroMag_std:	feature variable
+								num within [-1,1]
+
+67 fBodyBodyGyroJerkMag_mean:	feature variable
+								num within [-1,1]
+
+68  fBodyBodyGyroJerkMag_std:	feature variable
+								num within [-1,1]
 
 
-------------------------------------------------------
-	DATA DICTIONARY FOR FINAL DATA
 
-
-	
-
-1	Subjectid	: 1..30  an identifier of the subject who carried out the experiment
-
-2   ActivityType:  type of activity performed by each subject 1 WALKING 2 WALKING_UPSTAIRS 3 WALKING_DOWNSTAIRS 4 SITTING 5 STANDING 6 LAYING
-
-3	tBodyAcc_mean_X	: num 0.277 0.276 0.276 0.279 0.278 ...
- 
-4	tBodyAcc_mean_Y	: num -0.0174 -0.0186 -0.0172 -0.0148 -0.0173 ...
-
-5	tBodyAcc_mean_Z	: num -0.111 -0.106 -0.113 -0.111 -0.108 ...
-
-6	tBodyAcc_std_X	: num -0.284 -0.424 -0.36 -0.441 -0.294 ...
-
-7	tBodyAcc_std_Y	: num 0.1145 -0.0781 -0.0699 -0.0788 0.0767 ...
-
-8	tBodyAcc_std_Z	: num -0.26 -0.425 -0.387 -0.586 -0.457 ...
-
-9	tGravityAcc_mean_X	: num 0.935 0.913 0.937 0.964 0.973 ...
-
-10	tGravityAcc_mean_Y	: num -0.2822 -0.3466 -0.262 -0.0859 -0.1004 ...
-
-11	tGravityAcc_mean_Z	: num -0.0681 0.08473 -0.13811 0.12776 0.00248 ...
-
-12	tgravityaccstdx	: num -0.977 -0.973 -0.978 -0.984 -0.979 ...
-
-13	tgravityaccstdy	: num -0.971 -0.972 -0.962 -0.968 -0.962 ...
-
-14	tgravityaccstdz	: num -0.948 -0.972 -0.952 -0.963 -0.965 ...
-
-15	tbodyaccjerkmeanx	: num 0.074 0.0618 0.0815 0.0784 0.0846 ...
-
-16	tbodyaccjerkmeany	: num 0.02827 0.01825 0.01006 0.00296 -0.01632 ...
-
-17	tbodyaccjerkmeanz	: num -4.17e-03 7.90e-03 -5.62e-03 -7.68e-04 8.32e-05 ...
-18	tbodyaccjerkstdx	: num -0.114 -0.278 -0.269 -0.297 -0.303 ...
-19	tbodyaccjerkstdy	: num 0.067 -0.0166 -0.045 -0.2212 -0.091 ...
-20	tbodyaccjerkstdz	: num -0.503 -0.586 -0.529 -0.751 -0.613 ...
-21	tbodygyromeanx	: num -0.0418 -0.053 -0.0256 -0.0318 -0.0489 ...
-22	tbodygyromeany	: num -0.0695 -0.0482 -0.0779 -0.0727 -0.069 ...
-23	tbodygyromeanz	: num 0.0849 0.0828 0.0813 0.0806 0.0815 ...
-24	tbodygyrostdx	: num -0.474 -0.562 -0.572 -0.501 -0.491 ...
-25	tbodygyrostdy	: num -0.0546 -0.5385 -0.5638 -0.6654 -0.5046 ...
-26	tbodygyrostdz	: num -0.344 -0.481 -0.477 -0.663 -0.319 ...
-27	tbodygyrojerkmeanx	: num -0.09 -0.0819 -0.0952 -0.1153 -0.0888 ...
-28	tbodygyrojerkmeany	: num -0.0398 -0.0538 -0.0388 -0.0393 -0.045 ...
-29	tbodygyrojerkmeanz	: num -0.0461 -0.0515 -0.0504 -0.0551 -0.0483 ...
-30	tbodygyrojerkstdx	: num -0.207 -0.39 -0.386 -0.492 -0.358 ...
-31	tbodygyrojerkstdy	: num -0.304 -0.634 -0.639 -0.807 -0.571 ...
-32	tbodygyrojerkstdz	: num -0.404 -0.435 -0.537 -0.64 -0.158 ...
-33	tbodyaccmagmean	: num -0.137 -0.29 -0.255 -0.312 -0.158 ...
-34	tbodyaccmagstd	: num -0.22 -0.423 -0.328 -0.528 -0.377 ...
-35	tgravityaccmagmean	: num -0.137 -0.29 -0.255 -0.312 -0.158 ...
-36	tgravityaccmagstd	: num -0.22 -0.423 -0.328 -0.528 -0.377 ...
-37	tbodyaccjerkmagmean	: num -0.141 -0.281 -0.28 -0.367 -0.288 ...
-38	tbodyaccjerkmagstd	: num -0.0745 -0.1642 -0.1399 -0.3169 -0.2822 ...
-39	tbodygyromagmean	: num -0.161 -0.447 -0.466 -0.498 -0.356 ...
-40	tbodygyromagstd	: num -0.187 -0.553 -0.562 -0.553 -0.492 ...
-41	tbodygyrojerkmagmean	: num -0.299 -0.548 -0.566 -0.681 -0.445 ...
-42	tbodygyrojerkmagstd	: num -0.325 -0.558 -0.567 -0.73 -0.489 ...
-43	fbodyaccmeanx	: num -0.203 -0.346 -0.317 -0.427 -0.288 ...
-44	fbodyaccmeany	: num 0.08971 -0.0219 -0.0813 -0.1494 0.00946 ...
-45	fbodyaccmeanz	: num -0.332 -0.454 -0.412 -0.631 -0.49 ...
-46	fbodyaccstdx	: num -0.319 -0.458 -0.379 -0.447 -0.298 ...
-47	fbodyaccstdy	: num 0.056 -0.1692 -0.124 -0.1018 0.0426 ...
-48	fbodyaccstdz	: num -0.28 -0.455 -0.423 -0.594 -0.483 ...
-49	fbodyaccmeanfreqx	: num -0.208 -0.146 -0.247 -0.139 -0.322 ...
-50	fbodyaccmeanfreqy	: num 0.11309 0.19859 0.17174 0.01235 -0.00204 ...
-51	fbodyaccmeanfreqz	: num 0.0497 0.0689 0.0749 -0.0788 0.0247 ...
-52	fbodyaccjerkmeanx	: num -0.171 -0.305 -0.305 -0.359 -0.345 ...
-53	fbodyaccjerkmeany	: num -0.0352 -0.0788 -0.1405 -0.2796 -0.1811 ...
-54	fbodyaccjerkmeanz	: num -0.469 -0.555 -0.514 -0.729 -0.59 ...
-55	fbodyaccjerkstdx	: num -0.134 -0.314 -0.297 -0.297 -0.321 ...
-56	fbodyaccjerkstdy	: num 0.10674 -0.01533 -0.00561 -0.2099 -0.05452 ...
-57	fbodyaccjerkstdz	: num -0.535 -0.616 -0.544 -0.772 -0.633 ...
-58	fbodyaccjerkmeanfreqx	: num -0.2093 -0.0727 -0.216 -0.1353 -0.3594 ...
-59	fbodyaccjerkmeanfreqy	: num -0.386 -0.264 -0.259 -0.386 -0.534 ...
-60	fbodyaccjerkmeanfreqz	: num -0.186 -0.255 -0.347 -0.326 -0.344 ...
-61	fbodygyromeanx	: num -0.339 -0.43 -0.438 -0.373 -0.373 ...
-62	fbodygyromeany	: num -0.103 -0.555 -0.562 -0.688 -0.514 ...
-63	fbodygyromeanz	: num -0.256 -0.397 -0.418 -0.601 -0.213 ...
-64	fbodygyrostdx	: num -0.517 -0.604 -0.615 -0.543 -0.529 ...
-65	fbodygyrostdy	: num -0.0335 -0.533 -0.5689 -0.6547 -0.5027 ...
-66	fbodygyrostdz	: num -0.437 -0.56 -0.546 -0.716 -0.42 ...
-67	fbodygyromeanfreqx	: num 0.01478 0.00728 0.03376 -0.12715 -0.04586 ...
-68	fbodygyromeanfreqy	: num -0.0658 -0.0427 -0.038 -0.2747 -0.0192 ...
-
-
-
-
-
-----------------------------------------------------
 NOTE: 66 feature variables are used for the final data
 
-There are a total of 561 feature variables used for the study, from a variety of signals such as 
+Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+
+The features selected for the study come from the accelerometer, gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ, and other signals. For example, 
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
@@ -138,7 +232,7 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-The set of variables that were estimated from these signals for the study are:: 
+There are a total of 561 feature variables that were estimated from these signals and they are:: 
 
 mean(): Mean value
 std(): Standard deviation
@@ -158,15 +252,12 @@ kurtosis(): kurtosis of the frequency domain signal
 bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
 angle(): Angle between to vectors
 
-For the purpose of our project, however, we are only interested in the measurement variables related to the mean value and the standard deviation. Instead of using all of the 561 variables, we now have 66 variables, which have mean() and std() in their variable names.
+For the purpose of our project, however, we are only interested in the measurement variables related to the mean value and the standard deviation. There are 66 feature variables with mean() and std() in their names. meanFreq() is excluded as it is a function calculating something else other than mean(). 
 
 
 
 
-
-
------------------------------------------------------
-Transformations to clean up the data 
+Transformations to create a tidy data set 
 
 The raw data sets come from the following files:
 
@@ -179,63 +270,22 @@ The raw data sets come from the following files:
 - train/subject_train.txt
 - test/subject_test.txt
 
+
 Task 1: Merge the training and the test sets to create one data set
-Data from train/X_train.txt and test/X_test.txt are merged --> bigData 
-Data from train/y_train.txt and test/y_test.txt are merged --> labels 
-Data from train/subject_train.txt and test/subject_test.txt are merged --> subjects
+	. Measurement data from the raw data sets, train/X_train.txt and test/X_test.txt, are merged 
+	. Label data from the raw data sets, train/y_train.txt and test/y_test.txt, are merged  
+	. Subject data from the raw data sets, train/subject_train.txt and test/subject_test.txt, are merged 
 
-Task 2: Extract only the measurements on the mean and standard deviation for each measurement. 
-create a shorter feature list with mean() or std() in their variable names from feature list --> mean_sd_features
-Then removed "(", ")", and replaced "-" with "_" in mean_sd_features to ensure legitimate feature variable names 
-Finally select a subset of bigData based on mean_sd_features --> mean_sd_data
+Task 2: Extract only the measurements on the mean and standard deviation for each measurement 
+	. Create a subset of feature list with mean() or std() in their variable names 
+	. Removed "(", ")", and replaced "-" with "_" in mean_sd_features to ensure legitimate feature variable names 
+	. Create a subset of measurements based on mean_sd_features --> mean_sd_data
 
-Task 3: Use descriptive activity names to name the activities in the data set
-join the data from labels with the data from activity --> labels now have a new column with descriptive activity names
+Task 3: Join the data from labels with the data from activity so that labels are associated with activity names
 
-Task 4: Label the data set with descriptive variable names. 
-Labels the data set, mean_sd_dat, with the values from mean_sd_features
+Task 4: create a data set with descriptive variable names by merging all subjects, activity labels, and the measured data 
 
-step 5: Create a second, independent tidy data set with the average of each variable for each activity and each subject.
-Merged the data from subjects, labels, mean_sd_data
-Re-ordered the levels of ActivityType so that the final data will be in the order of
-	## "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
-have the data group-by SubjectId and ActivityType and 
-The final tidy data set has 180 * 68 rows with the following structure:
-SubjectId: 1 - 30
-ActivityType: WALKING, WALKING_UPSTAR...
-followed by 66 groups of numeric numbers - the average of each feature variable for each SubjectId and each ActivityType
+step 5: create data set with the average of each variable for each activity and each subject, also write the data set to a text file, tidydata.txt
 
 
 
---------------------------------------------------
-features:
-source: features.txt which provides a list of 561 featuer vectors
-A 561-feature vector with time and frequency domain variables
-For the project, we are only interested in the following feature variables as they are related to the mean and the standard deviation
-
-activity_labels
-source: activity_labels.txt provides 6 different labels with their corresponding activity name
-names(activities) <- c("ActivityType", "ActivityDesc")
-ActivityType: six activity labels from 1 - 6
-ActivityDesc: their corresponding activity name
-
-
-subjects:
-source: train/subject_train.txt + test/subject_test.txt (7352 rows + 2947 rows = 10299 rows of subjectId)
-Each row identifies the subject who performed the activity for each window sample. There are 30 subjects, ranging from 1 to 30. 
-subjectId: an identifier of the subject who carried out the experiment.
-
-
-
-data set (traing set + test set)
-souce: train/X_train.txt + test/X_test.txt (7352 rows of 561 feature variables + 2947 rows of 561 feature variables = 10299 rows of feature variables/feature vectors)
-values are normalized and bounded within [-1,1]
-
-names(mean_sd_data) <- mean_sd_features$V2
-
-
-labels (training labels + test labels)
-source: train/y_train.txt + test/y_test.txt (7352 rows of labels + 2947 rows of labels = 10299 rows of labels)
-Its activity label
-names(labels) <- ActivityType
----

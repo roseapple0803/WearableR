@@ -13,6 +13,11 @@ The goal of the project is to create a tidy data set by running a R script, run_
 . Appropriately labels the data set with descriptive variable names. 
 . From the data set in step 4, creates a tidy data set with the average of each variable for each activity and each subject and also writes the data set to a text file.
 
+For each record in the tidy data set, it follows the structure below:
+. an identifier of the subject who carried out the experiment
+. type of activity performed by the subject 
+. 66 feature variables
+
 
 
 What are included in this repository
@@ -20,7 +25,7 @@ What are included in this repository
 README.md
 CodeBook.md
 run_analysis.R 
---------------------------------
+
 
 How to run the script, run_analysis.R
 
